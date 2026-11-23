@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Konserter i Oslo og Gøteborg, med reisestatus for Winterwaves.">
+<title>Konsertplan · Oslo og Gøteborg</title>
+<style>
+:root{color-scheme:dark;--bg:#131514;--panel:#1b1e1b;--ink:#f5f4eb;--muted:#babdb3;--lime:#dcff75;--amber:#ffcc80;--line:#393e35}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,sans-serif;line-height:1.5}
+.wrap{width:min(72rem,calc(100% - 3rem));margin:auto}
+header{border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 85% 0%,#343e21,transparent 65%)}
+.hero{padding:3rem 0 2.5rem}
+.kicker,time,dt{font-family:ui-monospace,monospace}
+.kicker{color:var(--lime);text-transform:uppercase;letter-spacing:.13em;font-size:.875rem;margin:0}
+h1{font-size:clamp(2.7rem,8vw,6.5rem);line-height:1;letter-spacing:-.075em;margin:.35em 0 .32em}
+nav{display:flex;gap:.65rem}
+a{color:var(--lime);text-underline-offset:.25em}
+a:focus-visible{outline:2px solid var(--amber);outline-offset:4px}
+nav a{border:1px solid #60694d;padding:.35rem .8rem;border-radius:2rem;text-decoration:none;color:var(--ink)}
+nav a:hover{background:var(--lime);color:var(--bg)}
+main{display:grid;grid-template-columns:1.45fr 1fr;gap:2.5rem;padding:2.25rem 0 4rem}
+section{min-width:0}
+h2{font-size:2rem;letter-spacing:-.05em;margin:0 0 .9rem}
+ul{list-style:none;margin:0;padding:0}
+.event{display:grid;grid-template-columns:6.2rem minmax(0,1fr);align-items:center;gap:1.15rem;padding:.95rem 0;border-top:1px solid var(--line)}
+li.event:last-child{border-bottom:1px solid var(--line)}
+time{color:var(--lime);display:grid;font-size:.875rem;line-height:1.25;border-left:2px solid var(--lime);padding-left:.7rem}
+time strong{font-size:2rem;letter-spacing:-.06em}
+h3{font-size:1.2rem;line-height:1.2;margin:0 0 .25rem}
+p{margin:0;color:var(--muted)}
+.trip{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--lime);padding:1.2rem}
+.trip .event{border:0;padding:0 0 1.2rem}
+.trip a{display:inline-block;margin-top:.3rem}
+dl{margin:0}
+dl div{display:flex;justify-content:space-between;gap:.75rem;padding:.7rem 0;border-top:1px solid var(--line)}
+dt{font-size:.875rem;align-self:center}dd{margin:0;color:var(--lime);font-weight:650}dd.todo{color:var(--amber)}
+@media(max-width:53rem){main{grid-template-columns:1fr;gap:2rem}}
+@media(max-width:25rem){.wrap{width:calc(100% - 2rem)}.event{grid-template-columns:5rem minmax(0,1fr);gap:.75rem}.trip{padding:.8rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap hero">
+<p class="kicker">November 2026 – april 2027</p>
+<h1>Konsertplan</h1>
+<nav aria-label="Byer"><a href="#oslo">Oslo</a><a href="#goteborg">Gøteborg</a></nav>
+</div></header>
+<main class="wrap">
+<section id="oslo" aria-labelledby="oslo-title">
+<h2 id="oslo-title">Oslo</h2>
+<ul>
+<li class="event"><time datetime="2026-11-24"><span>Tirsdag</span><strong>24</strong><span>nov. 2026</span></time><div><h3>Xeno &amp; Oaklander</h3><p>Vaterland Bar &amp; Scene</p></div></li>
+<li class="event"><time datetime="2026-12-18"><span>Fredag</span><strong>18</strong><span>des. 2026</span></time><div><h3>Seigmen + The Sound Veil Society</h3><p>John Dee</p></div></li>
+<li class="event"><time datetime="2026-12-19"><span>Lørdag</span><strong>19</strong><span>des. 2026</span></time><div><h3>Combichrist</h3><p>John Dee</p></div></li>
+<li class="event"><time datetime="2027-04-28"><span>Onsdag</span><strong>28</strong><span>apr. 2027</span></time><div><h3>Die Krupps + Ministry</h3><p>Rockefeller</p><p>Hate To Go - Goodbye Europe 2027</p></div></li>
+</ul>
+</section>
+<section id="goteborg" aria-labelledby="goteborg-title">
+<h2 id="goteborg-title">Gøteborg</h2>
+<article class="trip">
+<div class="event"><time datetime="2027-01-16"><span>Lørdag</span><strong>16</strong><span>jan. 2027</span></time><div><h3>Winterwaves</h3><p>Musikens Hus</p><a href="https://winterwaves.se/">Festivalens nettside</a></div></div>
+<dl aria-label="Status for turen">
+<div><dt>Festivalbilletter</dt><dd>Kjøpt</dd></div>
+<div><dt>Togbilletter</dt><dd>Kjøpt</dd></div>
+<div><dt>Hotell</dt><dd class="todo">Mangler</dd></div>
+</dl>
+</article>
+</section>
+</main>
+</body>
+</html>
